@@ -1,0 +1,42 @@
+body {
+    background: #271d19;
+    animation: darken-background 4s ease-in-out infinite alternate;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#face {
+    fill: #271d19;
+    animation: light 4s ease-in-out infinite alternate;
+}
+
+#pumpkin-body {
+    animation: darken 4s ease-in-out infinite alternate;
+}
+
+@keyframes light {
+  from {
+      fill: #271d19;
+  }
+
+  to {
+      fill: #fdb832;
+  }
+}
+
+@keyframes darken {
+  to {
+      opacity: 0.3;
+  }
+}
+
+@keyframes darken-background {
+  to {
+      background: #0e0101;
+  }
+}
